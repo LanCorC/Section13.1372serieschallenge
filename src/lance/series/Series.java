@@ -11,9 +11,7 @@ public class Series {
     }
 
     public static int factorial(int n){
-        if (n == 0) { //terminate
-            return 0;
-        } else if(n == 1){
+        if (n <= 1 && n >= 0) { //terminate
             return 1;
         }
         return n * factorial(n - 1);
@@ -31,21 +29,21 @@ public class Series {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
-//    public static void main(String[] args) {
-//        for (int i = 0; i <= 10; i ++) {
-//            System.out.print(nSum(i) + " ");
-//        }
-//        System.out.println();
-//
-//        for (int i = 0; i <= 10; i ++) {
-//            System.out.print(factorial(i)+ " ");
-//        }
-//        System.out.println();
-//
-//        for (int i = 0; i <= 10; i ++) {
-//            System.out.print(fibonacci(i)+ " ");
-//        }
-//    }
+    public static void main(String[] args) {
+        for (int i = 0; i <= 10; i ++) {
+            System.out.print(nSum(i) + " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i <= 10; i ++) {
+            System.out.print(factorial(i)+ " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i <= 10; i ++) {
+            System.out.print(fibonacci(i)+ " ");
+        }
+    }
 }
 
 //Factorial
